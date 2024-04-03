@@ -129,7 +129,7 @@ class InstagramBot:
         feeds = driver.find_elements_by_css_selector("article .FPmhX.notranslate.nJAzx")  #wszyscy widzoczni
         feeds_n = [user.get_attribute('title') for user in feeds]; print("in view", feeds_n)
 
-    def followers_check(self):    #odświerza baze obserwujących
+    def followers_check(self):    #odświeza baze obserwujących
         driver = self.driver
         driver.find_element_by_class_name('glyphsSpriteUser__outline__24__grey_9').click()   #otwiera mój profil ludek prawa góra 
         time.sleep(2)
